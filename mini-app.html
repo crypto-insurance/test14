@@ -6,73 +6,73 @@
     <title>Выбор категорий</title>
     <style>
         body {
-            background-color: #333; /* Темный фон */
+            background-color: #333; /* Dark background */
             color: white;
             font-family: Arial, sans-serif;
-            margin: 0; /* Убрать стандартные отступы */
-            padding: 20px 0; /* Добавить отступ сверху и снизу */
-            display: flex; /* Включение flexbox */
-            justify-content: center; /* Горизонтальное выравнивание */
-            align-items: flex-start; /* Выравнивание содержимого по верху */
-            height: 100vh; /* Полная высота видимой части окна браузера */
+            margin: 0; /* Remove default margins */
+            padding: 20px 0; /* Add padding at the top and bottom */
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Horizontal alignment */
+            align-items: flex-start; /* Align content at the top */
+            height: 100vh; /* Full viewport height */
         }
         .buttons-container {
-            display: flex; /* Включение flexbox для контейнера кнопок */
-            flex-wrap: wrap; /* Перенос элементов на новую строку */
-            justify-content: center; /* Центрирование кнопок горизонтально */
+            display: flex; /* Enable flexbox for button container */
+            flex-wrap: wrap; /* Wrap elements to new line */
+            justify-content: center; /* Center buttons horizontally */
         }
         .category-btn {
             margin: 5px;
             padding: 10px 20px;
-            border: 2px solid #5D5D5D; /* Темная обводка */
+            border: 2px solid #5D5D5D; /* Dark border */
             border-radius: 5px;
-            background-color: transparent; /* Прозрачный фон */
+            background-color: transparent; /* Transparent background */
             color: white;
-            font-size: 14px;
+            font-size: 12px;
             cursor: pointer;
             outline: none;
             transition: background-color 0.3s, border-color 0.3s;
         }
         .category-btn:hover, .category-btn:focus {
-            border-color: #6A5ACD; /* Светлая обводка при наведении */
+            border-color: #6A5ACD; /* Light border on hover */
         }
         .selected {
-            background-color: #6A5ACD; /* Подсветка при выборе */
+            background-color: #6A5ACD; /* Highlight on selection */
         }
     </style>
 </head>
 <body>
     <div class="buttons-container">
-        <button class="category-btn" onclick="selectCategory(this, 'Рецепты')">🍽 Рецепты</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Машины')">🚗 Машины</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Карьера')">💼 Карьера</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Дети')">👶 Дети</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Животные')">🐶 Животные</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Юрист')">⚖️ Юрист</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Программист')">💻 Программист</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Врач')">🩺 Врач</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Языки')">🌍 Языки</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Спорт')">⚽ Спорт</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Школа')">🏫 Школа</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Университет')">🎓 Университет</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Знаменитости')">🌟 Знаменитости</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Маркетинг')">📈 Маркетинг</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Музыка')">🎵 Музыка</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Психолог')">🧠 Психолог</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Путешествия')">✈️ Путешествия</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Фильмы')">🎥 Фильмы</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Технологии')">🖥 Технологии</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Финансы')">💰 Финансы</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Садоводство')">🌿 Садоводство</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Игры')">🎮 Игры</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Эзотерика')">🔮 Эзотерика</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Религия')">✝️ Религия</button>
-        <button class="category-btn" onclick="selectCategory(this, 'Лайфхаки')">🛠 Лайфхаки</button>
-  </div>
+        <button class="category-btn" onclick="selectCategory(this, 'Recipes')">🍽 Рецепты</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Cars')">🚗 Машины</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Career')">💼 Карьера</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Children')">👶 Дети</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Animals')">🐶 Животные</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Lawyer')">⚖️ Юрист</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Programmer')">💻 Программист</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Doctor')">🚑 Врач</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Languages')">🌍 Языки</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Sports')">⚽ Спорт</button>
+        <button class="category-btn" onclick="selectCategory(this, 'School')">🏫 Школа</button>
+        <button class="category-btn" onclick="selectCategory(this, 'University')">📚 Университет</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Celebrities')">🌟 Знаменитости</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Marketing')">📈 Маркетинг</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Music')">🎸 Музыка</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Psychologist')">🧠 Психолог</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Travel')">✈️ Путешествия</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Movies')">🍿 Фильмы</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Technology')">🖥 Технологии</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Finance')">💰 Финансы</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Gardening')">🌿 Садоводство</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Gaming')">🎮 Игры</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Esoterics')">🔮 Эзотерика</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Religion')">✝️ Религия</button>
+        <button class="category-btn" onclick="selectCategory(this, 'Lifehacks')">🛠 Лайфхаки</button>
+    </div>
     <script>
         function selectCategory(button, category) {
             button.classList.toggle('selected');
-            console.log("Выбрана категория:", category);
+            console.log("Selected category:", category);
         }
     </script>
 </body>
